@@ -1,0 +1,17 @@
+settings_version: 0.0.4
+datasets_dir: /home/codezeros/Documents/fire&smoke detection/test
+weights_dir: weights
+runs_dir: runs
+uuid: 768f6380a4a9550a03ac65b2f1ac661dce90259590a94849344c676a872e6f4b
+sync: true
+api_key: ''
+openai_api_key: ''
+clearml: true
+comet: true
+dvc: true
+hub: true
+mlflow: true
+neptune: true
+raytune: true
+tensorboard: true
+wandb: true

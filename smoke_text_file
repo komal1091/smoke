@@ -1,0 +1,15 @@
+from ultralytics import YOLO
+import numpy as np
+from PIL import Image
+import requests
+from io import BytesIO
+import cv2
+
+
+model = YOLO("yolov5n6u.pt")
+
+model = YOLO('yolov5n6.yaml')  # build a new model from YAML
+# model = YOLO('yolov5n6u.pt')  # load a pretrained model (recommended for training)
+model = YOLO('yolov5n6.yaml').load('yolov5n6u.pt')  # build from YAML and transfer weights
+
+results = model.train(data='/kaggle/input/smoke-detect/datasets/fire-8/data.yaml', epochs=200, imgsz=640)
